@@ -1,0 +1,42 @@
+<html>
+  <!--#set var="DEBUG" value="0" -->
+  <head>
+    <title>Zaidman`s insurance</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <!--# include file="./content/header.html" -->
+
+    <!--#set var="CONTENT" value= "/content/none.html" -->
+
+    <!--#if expr="$REQUEST_URI = /^\/index.html/" -->
+    <!--#set var="CONTENT" value= "/content/main.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/contacts.html/" -->
+    <!--#set var="CONTENT" value= "/content/contacts.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$DEBUG = /1/" -->
+    Это отладочный вывод, отключается в $DEBUG<br />
+    $REQUEST_URI: <!--# echo var="REQUEST_URI" default="нет" --><br />
+    $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
+    <br />
+    <!--#endif -->
+
+    <table>
+      <tr>
+        <td valign="top">
+          <!--# include file="./content/menu.html" -->
+        </td>
+        <td valign="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td valign="top">
+          <!--# include file="$CONTENT" -->
+        </td>
+      </tr>
+    </table>
+    <!--# include file="./content/footer.html" -->
+  </body>
+</html>
