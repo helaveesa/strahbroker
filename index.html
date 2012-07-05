@@ -1,7 +1,7 @@
 <html>
   <!--#set var="DEBUG" value="0" -->
   <head>
-    <title>Zaidman`s insurance</title>
+    <title>ZaidmanBroker.ru</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
@@ -9,8 +9,24 @@
 
     <!--#set var="CONTENT" value= "/content/none.html" -->
 
+    <!--#if expr="$REQUEST_URI = /^\//" -->
+    <!--#set var="CONTENT" value= "/content/main.html" -->
+    <!--#endif -->
+
     <!--#if expr="$REQUEST_URI = /^\/index.html/" -->
     <!--#set var="CONTENT" value= "/content/main.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/regulations.html/" -->
+    <!--#set var="CONTENT" value= "/content/regulations.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/service.html/" -->
+    <!--#set var="CONTENT" value= "/content/service.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/faq.html/" -->
+    <!--#set var="CONTENT" value= "/content/faq.html" -->
     <!--#endif -->
 
     <!--#if expr="$REQUEST_URI = /^\/contacts.html/" -->
@@ -38,5 +54,34 @@
       </tr>
     </table>
     <!--# include file="./content/footer.html" -->
+
+ <div class="divider">***   ***   ***</div>
+    Выбор страховой компании
+ <br>
+    <a target="_blank" href="http://www.ic-ratings.ru/reviews/">
+     предложения страховых компаний</a>
+    <br>
+    <br>
+    Клиника Скандинавия
+    <br>
+    <a target="_blank" href="http://avaclinic.ru/">"Скандинавия"</a>
+    "Мы рядом, чтобы Вы были здоровы!"
+       <br>
+       <br>
+    Травмпункт
+    <a target="_blank" href="http://www.travma24.ru/service/travmpunkt---kruglosutochno/kruglosutochnyj-travmpunkt.html">первая помощь при травмах</a>
+    <br>
+    Хорошёвский.
+    <br>
+    <br>
+    Мотоциклы
+    <a target="_blank" href="http://www.multimoto.ru/">из Японии
+    </a>
+    <br>
+    <br>
+    Система лояльности для мотоциклистов
+    <a target="_blank" href="http://www.bikerswelcome.ru/">Bikers Welcome</a>
+<div class="clear">***   ***   ***</div>
+
   </body>
 </html>
