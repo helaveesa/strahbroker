@@ -5,6 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
+
+    <body id="top">
+<div id="center">
+<div class="col1 left">
+<a id="logo" href="/">
+<img
+</a>
+<ul id="nav">
+
+<div class="col3 right">
+<h1 style="margin: 0">Мы находимся здесь, чтобы внести свой вклад в этот мир. А иначе зачем мы здесь?&mdash; Стив Джобс </h1>
+
+
     <!--# include file="./content/header.html" -->
 
     <!--#set var="CONTENT" value= "/content/none.html" -->
@@ -25,13 +38,33 @@
     <!--#set var="CONTENT" value= "/content/service.html" -->
     <!--#endif -->
 
-    <!--#if expr="$REQUEST_URI = /^\/faq.html/" -->
-    <!--#set var="CONTENT" value= "/content/faq.html" -->
-    <!--#endif -->
-
     <!--#if expr="$REQUEST_URI = /^\/contacts.html/" -->
     <!--#set var="CONTENT" value= "/content/contacts.html" -->
     <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/equivalence.html/" -->
+    <!--#set var="CONTENT" value= "/content/equivalence.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/happenstance.html/" -->
+    <!--#set var="CONTENT" value= "/content/happenstance.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/TODO.html/" -->
+    <!--#set var="CONTENT" value= "/content/TODO.html" -->
+    <!--#endif -->
+
+
+    <!--#config timefmt="%H:%M:%S"-->
+    <!--#echo var="DATE_LOCAL"-->
+    <br>
+    <br>
+    <!--#config timefmt="%A"-->
+    <!--#echo var="DATE_GMT"-->
+    <br>
+    <br>
+    <!--#config timefmt="%d.%m.%Y"-->
+    <!--#echo var="DATE_GMT"-->
 
     <!--#if expr="$DEBUG = /1/" -->
     Это отладочный вывод, отключается в $DEBUG<br />
@@ -39,7 +72,8 @@
     $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
     <br />
     <!--#endif -->
-
+    <br>
+    <br>
     <table>
       <tr>
         <td valign="top">
@@ -82,6 +116,14 @@
     Система лояльности для мотоциклистов
     <a target="_blank" href="http://www.bikerswelcome.ru/">Bikers Welcome</a>
 <div class="clear">***   ***   ***</div>
-
+<br>
+<br>
+broker50@mail.ru<br>
+<br>
+Admin:
+<br>
+i.am.rigidus@gmail.com
+<br>
+helaveesa.nolder@gmail.com
   </body>
 </html>
