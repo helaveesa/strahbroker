@@ -1,0 +1,365 @@
+body {
+    background-color: #556832;
+    background-image: url("YEZ.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    font-size: 120%;
+}
+body {
+	margin-top: 100px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	margin-left: 70px;
+	}
+
+h1 {
+	color: #BEF547;
+	background-color: #556832;
+        font-family: arial, verdana, sans-serif;
+        font-variant: small-caps;
+	font-size: 30px;
+	text-decoration: overline;
+	}
+h1 {
+	background: yellow;
+	padding: 20px 20px 20px 80px;
+	}
+h1 {
+	letter-spacing: 6px;
+	}
+
+p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: arial, sans-serif;
+	text-indent: 30px;
+	text-align: justify;
+	}
+p {
+	margin: 5px 50px 5px 50px;
+	}
+
+p {
+	letter-spacing: 3px;
+	}
+<p>Страхова́ние — особый вид <span class="benefit">экономических</span> отношений, призванный
+обеспечить страховую <span class="benefit">защиту</span> людей и их дел от различного рода
+опасностей<span class="benefit"></span>.</p>
+
+span.benefit {
+	color:red;
+	}
+
+a:link {
+	color: #6699CC;
+	}
+a:visited {
+	color: #660099;
+	}
+a:hover {
+	text-transform: uppercase;
+	font-weight:bold;
+	color:blue;
+	background-color:yellow;
+	}
+#picture {
+	float:right;
+	width: 100px;
+	}
+.floatstop {
+	clear:both;
+	}
+
+
+
+
+
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+.divider {
+    border-bottom: 4px solid #556832;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    padding: 12px 0 0;
+}
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}
+.relative {
+    position: relative;
+}
+.col1 {
+    width: 225px;
+}
+.col2 {
+    padding: 10px;
+    width: 320px;
+}
+.col3 {
+    padding-right: 20px;
+    width: 840px;
+}
+.col4 {
+    width: 400px;
+}
+.padLeft {
+    margin-left: 30px;
+}
+
+
+#logo {
+    display: block;
+    height: 70px;
+    margin: 6px 0 0 30px;
+    overflow: hidden;
+    width: 139px;
+}
+#logo:hover {
+    opacity: 0.8;
+}
+
+
+
+
+ul#nav {
+    font: 18px arial;
+    list-style-type: none;
+    margin: 36px 0 0;
+    width: 240px;
+}
+
+
+
+
+
+
+
+.shiftUp {
+    margin-bottom: -18px;
+    position: relative;
+    top: -36px;
+}
+.cutRight {
+    margin-right: 320px;
+}
+
+
+
+
+
+
+.imgPhoto {
+    float: right;
+    left: 44px;
+    margin: 0 0 18px 8px;
+    position: relative;
+}
+
+
+
+
+
+
+ul#share {
+    margin: 24px 0 18px;
+}
+
+
+
+
+#stumble {
+    padding: 1px 0 1px 22px;
+}
+#float {
+    padding: 1px 0 1px 22px;
+}
+#delicious {
+    padding: 1px 0 1px 22px;
+}
+#digg {
+    padding: 1px 0 1px 22px;
+}
+
+
+
+
+pre {
+    background: none repeat scroll 0 0 #303030;
+    display: block;
+    font: 14px 'lucida console','lucida sans typewriter','courier new',courier;
+    margin: 22px 0;
+    overflow: auto;
+    padding: 18px 18px 24px;
+    width: 770px;
+}
+code {
+    background: none repeat scroll 0 0 #303030;
+    font: 14px 'lucida console','lucida sans typewriter','courier new',courier;
+    padding: 5px 8px 4px;
+    white-space: nowrap;
+}
+pre em, code em {
+    color: #FFFFFF;
+    font-style: normal;
+}
+.alert {
+    background: none repeat scroll 0 0 #181818;
+    padding: 8px 12px;
+}
+.guideNum {
+    border-top: 4px solid #556832;
+    float: left;
+    left: -210px;
+    margin: -4px -210px 0 0;
+    padding: 34px 0 0;
+    position: relative;
+    width: 210px;
+}
+.guideNum img {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.guideNum a, .guideNum a:visited {
+    background: url("../i/arrow-up.gif") no-repeat scroll right 6px transparent;
+    color: #78866B;
+    margin-left: 4px;
+    padding-right: 12px;
+}
+.guideNum a:hover {
+    background-position: right -14px;
+    color: #FFFDDF;
+}
+#guideNav {
+    margin: 0 13px 80px 30px;
+    padding: 8px 12px;
+}
+#guideNav h3 {
+    margin-top: 0;
+}
+#guideNav ul {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+#guideNav ul a, #guideNav ul a:visited {
+    margin-left: 4px;
+}
+ul.fileList li, ul.fileList li strong {
+    color: #FFFFFF;
+    font: 16px arial;
+}
+
+
+
+
+
+
+
+#footer {
+    background: none repeat scroll 0 0 #303030;
+    clear: both;
+    color: #CADABA;
+    height: 70px;
+    margin: 0 auto;
+    padding: 1px 0 0 100px;
+    width: 720px;
+}
+#footer p {
+    margin: 18px 0 12px;
+}
+#footer a:link, #footer a:visited {
+    color: #CADABA;
+}
+#footer a:hover {
+    color: #FFFFFF;
+}
+fieldset {
+    border: 0 none;
+}
+label {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: 16px arial,tahoma;
+    margin: 4px 20px 0 0;
+    width: 140px;
+}
+.input {
+    background: none repeat scroll 0 0 #303030;
+    border: 0 none;
+    color: #FFFDDF;
+    font: 11px 'lucida sans unicode','lucida grande',tahoma,arial,trebuchet,"sans serif";
+    padding: 5px;
+    width: 480px;
+}
+input.input {
+}
+select.input {
+    width: 490px;
+}
+.input:focus, option:focus {
+    border: 0 none;
+    outline: 0 none;
+}
+textarea.input {
+    height: 100px;
+}
+form ul li {
+    clear: both;
+    padding-bottom: 10px;
+}
+a#buttonSend:link, a#buttonSend:visited {
+    background: url("../i/button-send.gif") no-repeat scroll left top transparent;
+    display: block;
+    height: 29px;
+    margin: 0 0 0 160px;
+    overflow: hidden;
+    width: 70px;
+}
+a#buttonSend:hover {
+    background-position: left -29px;
+}
+#contactForm textarea.input {
+    height: 200px;
+}
+form#purchase {
+    background: none repeat scroll 0 0 #556832;
+    padding: 12px;
+    width: 186px;
+}
+form#purchase label {
+    color: #CADABA;
+    float: left;
+    font: 11px 'lucida sans unicode','lucida grande',tahoma,arial,trebuchet,"sans serif";
+    margin: 14px 5px 0 0;
+    width: auto;
+}
+form#purchase .input {
+    background: none repeat scroll 0 0 #78866B;
+    color: #FFFDDF;
+    float: left;
+    margin: 12px 0 0;
+    padding: 2px;
+    width: 90px;
+}
+
