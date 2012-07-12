@@ -1,60 +1,336 @@
 <html>
+
   <!--#set var="DEBUG" value="0" -->
+
+
   <head>
+
     <title>ZaidmanBroker.ru</title>
     <meta http-equiv="Content-Type" content="text/html;
     charset=utf-8"/>
+    <script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
 
-   </head>
+
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+		$("#panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+
+
+});
+</script>
+<style type="text/css">
+a:focus {
+	outline: none;
+}
+#panel {
+	background: #4f7942;
+	height: 200px;
+	display: none;
+}
+.slide {
+	margin: 0;
+	padding: 0;
+	border-top: solid 4px #422410;
+	background: url(images/btn-slide.gif) no-repeat center top;
+}
+.btn-slide {
+	background: url(images/white-arrow.gif) no-repeat right -50px;
+	text-align: center;
+	width: 144px;
+	height: 31px;
+	padding: 10px 10px 0 0;
+	margin: 0 auto;
+	display: block;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+.active {
+	background-position: right 12px;
+}
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".pane .delete").click(function(){
+        $(this).parents(".pane").animate({ opacity: "hide" }, "slow");
+    });
+
+});
+</script>
+<style type="text/css">
+h3 {
+	margin: 0;
+	padding: 0 0 .3em;
+}
+p {
+	margin: 0;
+	padding: 0 0 .5em;
+}
+.pane {
+	background: #edf5e1;
+	padding: 10px 20px 10px;
+	position: relative;
+	border-top: solid 2px #c4df9b;
+}
+.pane .delete {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+</style>
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".accordion2 h3").eq(2).addClass("active");
+    $(".accordion2 p").eq(2).show();
+
+    $(".accordion2 h3").click(function(){
+        $(this).next("p").slideToggle("slow")
+        .siblings("p:visible").slideUp("slow");
+        $(this).toggleClass("active");
+        $(this).siblings("h3").removeClass("active");
+    });
+
+});
+</script>
+<style type="text/css">
+.accordion2 {
+	width: 480px;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion2 h3 {
+	background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion2 h3:hover {
+	background-color: #e3e2e2;
+}
+.accordion2 h3.active {
+	background-position: right 5px;
+}
+.accordion2 p {
+	background: #f7f7f7;
+	margin: 0;
+	padding: 10px 15px 20px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+	display: none;
+}
+</style>
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("h2").append('<em></em>')
+
+	$(".thumbs a").click(function(){
+
+		var largePath = $(this).attr("href");
+		var largeAlt = $(this).attr("title");
+
+		$("#largeImg").attr({ src: largePath, alt: largeAlt });
+
+		$("h2 em").html(" (" + largeAlt + ")"); return false;
+	});
+
+});
+</script>
+<style type="text/css">
+h2 {
+	font: bold 190%/100% Arial, Helvetica, sans-serif;
+	margin: 0 0 .2em;
+}
+h2 em {
+	font: normal 80%/100% Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+#largeImg {
+	border: solid 1px #ccc;
+	width: 550px;
+	height: 400px;
+	padding: 5px;
+}
+.thumbs img {
+	border: solid 1px #ccc;
+	width: 100px;
+	height: 100px;
+	padding: 4px;
+}
+.thumbs img:hover {
+	border-color: #FF9900;
+}
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+	$(".run").click(function(){
+
+		$("#box").animate({opacity: "0.1", left: "+=400"}, 1200)
+		.animate({opacity: "0.4", top: "+=160", height: "20", width: "20"}, "slow")
+		.animate({opacity: "1", left: "0", height: "100", width: "100"}, "slow")
+		.animate({top: "0"}, "fast")
+		.slideUp()
+		.slideDown("slow")
+		return false;
+
+	});
+
+});
+</script>
+<style type="text/css">
+a {
+	font-weight: bold;
+	color: #000000;
+}
+#box {
+	background: #6699FF;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+</style>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".accordion h3:first").addClass("active");
+	$(".accordion p:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+</script>
+<style type="text/css">
+.accordion {
+	width: 480px;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion h3 {
+	background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion h3:hover {
+	background-color: #e3e2e2;
+}
+.accordion h3.active {
+	background-position: right 5px;
+}
+.accordion p {
+	background: #f7f7f7;
+	margin: 0;
+	padding:  10px 15px 20px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+       </head>
+
+
+
 
   <body>
+
     <body style="background-color:#cadaba;">
 
-<body id="top">
 
+
+<body id="top">
 <div id="center">
-  <div class="col1 left">
-    <img src="YEZ.jpg" title="Strahovoi broker Zaidman Y. E">
-  <div class="col3 right">
-<h1 style="background-color:fffddf";>Мы находимся здесь, чтобы внести
+<h1 style="background-color:ffa500";>Мы находимся здесь, чтобы внести
   свой вклад в этот мир. А иначе зачем мы здесь?&mdash;Стив
   Джобс </h1>
-<div class="col4 left">
-  <p class="alert" style="width: 250px; color: red; font-size: 18px;">
-    <strong>zagolovok</strong>
-</p>
-  <ul style="color: #feffb8">
-    <li>
-      <span style="color: blue">★</span>
-      text
-    </li>
 <br>
-    <li>
-      <span style="color: blue">★</span>
-      <a href="/regulations">
-        <b>zagolovok</b>
-      </a>
-    </li>
-<br>
-</div>
 
-<div class="col4 left">
-  <p class="alert" style="width: 250px; color: red; font-size: 18px;">
-    <strong>zagolovok</strong>
-  </p>
-  text
-  <p class="alert" style="width: 250px; color: red; font-size: 18px;">
-    <strong>Последние новости в сфере страхования</strong>
-  </p>
-  <ul>
-    <li>
-      <span style="color: red">★</span>
-      text
-<br>
-  </ul>
+
+<div id="panel">
+<h2 class="panel"><a href="#" class="panel">
+text<br>
+</h2>
 </div>
 
 
+
+<p class="slide"><a href="#" class="btn-slide">
+Panel
+<br>
+<br>
+    <!--#config timefmt="%H:%M:%S"-->
+    <!--#echo var="DATE_LOCAL"--><br>
+    <!--#config timefmt="%A"-->
+    <!--#echo var="DATE_GMT"--><br>
+    <!--#config timefmt="%d.%m.%Y"-->
+    <!--#echo var="DATE_GMT"-->
+</a></p>
+<br>
 
 
     <!--# include file="./content/header.html" -->
@@ -65,9 +341,11 @@
     <!--#set var="CONTENT" value= "/content/main.html" -->
     <!--#endif -->
 
+
     <!--#if expr="$REQUEST_URI = /^\/index.html/" -->
     <!--#set var="CONTENT" value= "/content/main.html" -->
     <!--#endif -->
+
 
     <!--#if expr="$REQUEST_URI = /^\/regulations.html/" -->
     <!--#set var="CONTENT" value= "/content/regulations.html" -->
@@ -81,29 +359,7 @@
     <!--#set var="CONTENT" value= "/content/contacts.html" -->
     <!--#endif -->
 
-    <!--#if expr="$REQUEST_URI = /^\/equivalence.html/" -->
-    <!--#set var="CONTENT" value= "/content/equivalence.html" -->
-    <!--#endif -->
 
-    <!--#if expr="$REQUEST_URI = /^\/happenstance.html/" -->
-    <!--#set var="CONTENT" value= "/content/happenstance.html" -->
-    <!--#endif -->
-
-    <!--#if expr="$REQUEST_URI = /^\/TODO.html/" -->
-    <!--#set var="CONTENT" value= "/content/TODO.html" -->
-    <!--#endif -->
-
-
-    <!--#config timefmt="%H:%M:%S"-->
-    <!--#echo var="DATE_LOCAL"-->
-    <br>
-    <br>
-    <!--#config timefmt="%A"-->
-    <!--#echo var="DATE_GMT"-->
-    <br>
-    <br>
-    <!--#config timefmt="%d.%m.%Y"-->
-    <!--#echo var="DATE_GMT"-->
 
     <!--#if expr="$DEBUG = /1/" -->
     Это отладочный вывод, отключается в $DEBUG<br />
@@ -127,41 +383,206 @@
       </tr>
     </table>
     <!--# include file="./content/footer.html" -->
+</a></p>
+</div>
 
- <div class="divider"><hr /></div>
+
+
+
+
+
+
+<div class="pane">
+	<h3>Понятийный аппарат:</h3>
+<p style="background-color:fffddf";>
+<span style="color: green">★</span>
+Страхова́ние</p> — особый вид экономических отношений, призванный
+обеспечить страховую защиту людей и их дел от различного рода
+опасностей.
+	<img src="images/btn-delete.gif" alt="delete" class="delete" />
+</div>
+<div class="pane">
+<p style="background-color:fffddf";>
+<span style="color: green">★</span>
+Страховой случай</p> — (англ. insured loss) событие, предусмотренное
+договором страхования или законом, с наступлением которого возникает
+обязанность страховщика произвести страховую выплату страхователю,
+застрахованному лицу, выгодоприобретателю или иным третьим лицам.
+	<img src="images/btn-delete.gif" alt="delete" class="delete" />
+</div>
+<div class="pane">
+<p style="background-color:fffddf";>
+<span style="color: green">★</span>
+Принцип эквивалентности</p>выражает требование равновесия между доходами
+страховой организации и ее расходами.<br>
+Риск угрожает многим лицам, но
+лишь немногие из них действительно затрагиваются страховыми
+случаями.<br>
+Выплаты по страховым случаям покрываются за счет взносов
+многих страхователей, избежавших данного риска.
+<img src="images/btn-delete.gif" alt="delete" class="delete" />
+</div>
+<div class="pane">
+<p style="background-color:fffddf";>
+<span style="color: green">★</span>
+Понятие «случайность»</p>означает, что хотя с возможностью наступления
+данного события приходится считаться исходя из жизненного опыта,
+однако в каждом отдельном случае неизвестно, будет ли вообще иметь
+место данное событие или в какой момент времени оно
+наступит. Преднамеренно осуществленные действия не страхуются, так как
+в них отсутствует принцип случайности.
+<img src="images/btn-delete.gif" alt="delete" class="delete" />
+</div>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<div class="accordion2">
+	<h3>Имущественное страхование</h3>
+	<p>Юридические и физические лица могут заключать договоры страхования на объекты, в отношении которых они имеют имущественный интерес: здания, сооружения, передаточные устройства, силовые рабочие и другие машины, оборудование, транспортные средства, ловецкие и другие суда,объекты незавершенного производства и капитального строительства, инвентарь, готовая продукция, товары,интелектуальную собственность, например, программное обеспечение,и др.</p>
+	<h3>Страхование квартиры</h3>
+     <p><span style="color: ffff00">★</span>
+	риск уничтожения или повреждения имущества (включая ипотечное
+	страхование) в результате таких событий, как залив, пожар,
+	противоправные действия третьих лиц, стихийное бедствие, кражи
+	имущества, в том числе бытовой техники. Как показывает статистика,
+	наиболее частыми причинами наступления страхового случая являются
+	затопления или проникновение воды из соседних помещений;<br>
+       <span style="color: ffff00">★</span>
+   риск гражданской ответственности перед третьими лицами за
+   причинение вреда жизни и здоровью и ущерба их имуществу;<br>
+      <span style="color: ffff00">★</span>
+   риск утраты права собственности (титульное страхование);<br>
+      <span style="color: ffff00">★</span>
+   риск возникновения непредвиденных расходов на аренду жилья в
+   результате уничтожения (повреждения) имущества;<br>
+      <span style="color: ffff00">★</span>
+   финансовые риски, связанные с квартирами, право собственности на которые еще не оформлено, включая риск несения дополнительных расходов по договору долевого участия и риск неполучения права собственности на приобретаемую квартиру в строящемся доме по договору долевого участия.</p>
+	<h3>Автострахование</h3>
+	<p><span style="color: ffff00">★</span>
+      Страхование, которое призвано защищать имущественные интересы
+	застрахованных, связанные с затратами на восстановление
+	транспортного средства после аварии, поломки или покупку нового
+	авто после угона или хищения.<br>
+      <span style="color: ffff00">★</span>
+      Страхование ответственности владельца автотранспортного средства.
+      Страхование гражданской ответственности предполагает компенсацию
+	ущерба стороне, пострадавшей в автотранспортном происшествии по
+	вине Страхователя\ Застрахованного. Страховщик оплачивает
+	фактические расходы, вызванные страховым случаем, однако не больше
+	страховой суммы, предусмотренной договором страхования.<br>
+      <span style="color: ffff00">★</span>
+      Зелёная карта (страхование). Страхование гражданской ответственности владельца автотранспортного средства, выезжающего на своем автомобиле зарубеж.</p>
+	<h3>Страхование индивидуальной гражданской ответственности</h3>
+	<p>Объектом страхования общей гражданской ответственности перед третьими лицами является ответственность Страхователя\Застрахованного за ущерб имуществу, жизни и здоровью третьих лиц. Страхование ответственности-предоставление страховой защиты на случай предъявления страхователю третьими лицами требований, заявленных согласно с нормами действующего законодательства относительно возмещения имущественного вреда.</p>
+	<h3>Личное страхование</h3>
+	<p><span style="color: ffff00">★</span>
+      К личному страхованию относят все виды страхования, связанные с
+	вероятностными событиями в жизни отдельного человека. К отрасли
+	личного страхования относят виды страхования, в которых объектом
+	страхования являются имущественные интересы, связанные с жизнью,
+	здоровьем, трудоспособностью и пенсионным обеспечением
+	страхователя или застрахованного.<br>
+      <span style="color: ffff00">★</span>
+      Страхование жизни.<br>
+      К страхованию жизни относят все виды страхования, где в качестве
+	объекта страхования выступает жизнь человека. Но так как
+	невозможно определить, сколько стоит жизнь человека, страховые
+	организации ориентируются на доход клиента. Объектом защиты
+	выступает не столько жизнь, сколько доход человека. В среднем
+	сумма страховой защиты колеблется от 3 до 10 годовых доходов
+	клиента.<br>
+      <span style="color: ffff00">★</span>
+      Договоры страхования жизни заключаются на срок не менее одного
+	года. Различают рисковое и накопительное страхование жизни. В
+	рисковом (классическом) страховании деньги клиента идут на
+	покрытие риска и по окончании срока страхования не
+	возвращаются.<br>
+      <span style="color: ffff00">★</span>
+      В страхование жизни могут быть включены различные риски. Это
+	страхование от несчастного случая, от инвалидности, от частичной
+	потери трудоспособности, от критического заболевания (онкология, и
+	проч.). Таким образом, страховая ответственность по страхованию
+	жизни предусматривает выплаты страховой суммы в следующих случаях:
+	при дожитии застрахованным до окончания срока страхования; при
+	потере здоровья; при наступлении смерти застрахованного.</p>
+<h3>Страхование от несчастного случая</h3>
+<p>Страхование от несчастных случаев предназначено для возмещения
+  ущерба, вызванного потерей здоровья или смертью
+  застрахованного. Может осуществляться в групповой (например,
+  страхование работников предприятия) и индивидуальной формах, а также
+  в формах добровольного и обязательного страхования (например,
+  пассажиров, военнослужащих и других категорий граждан).</p>
+<h3>Медицинское страхование</h3>
+<p>Медицинское страхование гарантирует гражданам при возникновении страхового случая получение медицинской помощи за счёт накопленных средств и финансирование профилактических мероприятий. Медицинское страхование может выступать в форме обязательного и добровольного страхования.</p>
+</div>
+<br>
+<br>
+
+
+
+
+
+
+<br>
+<h4>Зайдман Яков Израилевич</h4>
+
+<p><img id="largeImg" src="images/img1-lg.jpg" alt="Large image" /></p>
+
+<p class="thumbs">
+	<a href="images/img2-lg.jpg" title="Image 2"><img src="images/img2-thumb.jpg" /></a>
+	<a href="images/img3-lg.jpg" title="Image 3"><img src="images/img3-thumb.jpg" /></a>
+	<a href="images/img4-lg.jpg" title="Image 4"><img src="images/img4-thumb.jpg" /></a>
+	<a href="images/img5-lg.jpg" title="Image 5"><img src="images/img5-thumb.jpg" /></a>
+</p>
+<br>
+<div class="divider"><hr /></div>
 <p style="font-size:20px; font-family:courier">Выбор страховой компании
     <a target="_blank" href="http://www.ic-ratings.ru/reviews/">
      предложения страховых компаний</a></p>
-   <p style="font-size:20px; font-family:courier">Клиника Скандинавия
+<p style="font-size:20px; font-family:courier">Портал
+    <a target="_blank" href="http://www.sluchay.ru/">
+     о страховании</a></p>
+<p style="font-size:20px; font-family:courier">Клиника
     <a target="_blank" href="http://avaclinic.ru/">"Скандинавия"</a>
     "Мы рядом, чтобы Вы были здоровы!"</p>
-<p style="font-size:20px; font-family:courier">Травмпункт
-    <a target="_blank" href="http://www.travma24.ru/service/travmpunkt---kruglosutochno/kruglosutochnyj-travmpunkt.html">первая помощь при травмах</a></p>
+<p style="font-size:20px; font-family:courier">Рейтинг страховых компаний
+    <a target="_blank" href="http://www.provolochki.ru/opinions/company_118/page/1">
+первая помощь при выборе страховой компании</a></p>
 <p style="font-size:20px; font-family:courier">Мотоциклы
     <a target="_blank" href="http://www.multimoto.ru/">из Японии</a><p>
 <p style="font-size:20px; font-family:courier">Система лояльности для
-  мотоциклистов<a target="_blank" href="http://www.bikerswelcome.ru/">Bikers
+  мотоциклистов
+    <a target="_blank" href="http://www.bikerswelcome.ru/">Bikers
     Welcome</a></p>
-
 <div class="clear"><hr /></div>
 <br>
+
 <div id="footer">
 <br>
-<p>
-<a href="/about">service</a>
-|
-<a href="/contacts">contacts</a>
-</p>
-<br>
-<div style="margin-top: -29px; margin-left: 150px;">
-</div>
-<p></p>
-</div>
 
-Zaidman Y. E.
+
+
+<p><a href="#" class="run">Zaidman Y. E.</a></p>
+<div id="box">
+<p>broker50<br>
+  @mail.ru<br>
 <br>
-broker50@mail.ru<br>
+Пишите!</p>
+</div>
 <br>
+<br>
+<br>
+
+
+
+
 Admin:
 <br>
 <a href="mailto:i.am.rigidus@gmail.com">Отправить e-mail Rigidus</a>
