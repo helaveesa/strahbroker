@@ -1,18 +1,12 @@
 <html>
+<!--#set var="DEBUG" value="0" -->
 
-  <!--#set var="DEBUG" value="0" -->
-
-
-  <head>
+<head>
 
     <title>ZaidmanBroker.ru</title>
     <meta http-equiv="Content-Type" content="text/html;
     charset=utf-8"/>
     <script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-
-
-
-
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -35,17 +29,17 @@ a:focus {
 	display: none;
 }
 .slide {
-	margin: 0;
+	margin: -19;
 	padding: 0;
-	border-top: solid 4px #422410;
+	border-top: solid 3px #422410;
 	background: url(images/btn-slide.gif) no-repeat center top;
 }
 .btn-slide {
 	background: url(images/white-arrow.gif) no-repeat right -50px;
 	text-align: center;
 	width: 144px;
-	height: 31px;
-	padding: 10px 10px 0 0;
+	height: 80px;
+	padding: 0;
 	margin: 0 auto;
 	display: block;
 	font: bold 120%/100% Arial, Helvetica, sans-serif;
@@ -220,10 +214,10 @@ $(document).ready(function(){
 <style type="text/css">
 a {
 	font-weight: bold;
-	color: #000000;
+	color: #463224;
 }
 #box {
-	background: #6699FF;
+	background: #bef574;
 	height: 100px;
 	width: 100px;
 	position: relative;
@@ -290,6 +284,48 @@ $(document).ready(function(){
 
 
 
+<script type="text/javascript">
+            $(document).ready(function(){
+
+                $("#btn1").click(function(){
+                	$('.panel').fadeOut()
+							   .fadeIn();
+                    return false;
+                });
+
+                $("#btn2").click(function(){
+                	$('.panel').animate({opacity:0})
+							   .animate({opacity:1});
+                    return false;
+                });
+            });
+        </script>
+        <style type="text/css">
+a:focus {
+                outline: none;
+            }
+.btn {
+            	display:block;
+				height:24px;
+				line-height:150px;
+            }
+.panel {
+                width: 450px;
+                height: 100px;
+                padding: 8px;
+				border:0;
+            }
+p {
+    margin: 18px;
+    padding: 0 0 0.5em;
+}
+        </style>
+
+
+
+
+
+
 
 
        </head>
@@ -313,18 +349,15 @@ $(document).ready(function(){
 
 <div id="panel">
 <h2 class="panel"><a href="#" class="panel">
-text<br>
+text
 </h2>
 </div>
 
 
 
-<p class="slide"><a href="#" class="btn-slide">
-Panel
+<p class="slide"><a href="#" class="btn-slide">PUSH!
 <br>
 <br>
-    <!--#config timefmt="%H:%M:%S"-->
-    <!--#echo var="DATE_LOCAL"--><br>
     <!--#config timefmt="%A"-->
     <!--#echo var="DATE_GMT"--><br>
     <!--#config timefmt="%d.%m.%Y"-->
@@ -334,6 +367,7 @@ Panel
 
 
     <!--# include file="./content/header.html" -->
+
 
     <!--#set var="CONTENT" value= "/content/none.html" -->
 
@@ -365,6 +399,7 @@ Panel
     Это отладочный вывод, отключается в $DEBUG<br />
     $REQUEST_URI: <!--# echo var="REQUEST_URI" default="нет" --><br />
     $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
+    $ARTICLE: <!--# echo var="ARTICLE" default="article.html" --></br />
     <br />
     <!--#endif -->
     <br>
@@ -375,7 +410,10 @@ Panel
           <!--# include file="./content/menu.html" -->
         </td>
         <td valign="top">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!--# include file="./content/article.html" -->
+          <div class="panel">
+          </div>
+          <br>
         </td>
         <td valign="top">
           <!--# include file="$CONTENT" -->
@@ -435,7 +473,6 @@ Panel
 </div>
 <br>
 <br>
-
 
 
 
