@@ -1,4 +1,6 @@
-\\\btn-slide and panel\\\
+<!--HEAD -->
+
+<!--btn-slide -->
 
 <script type="text/javascript">
       $(document).ready(function(){
@@ -9,6 +11,7 @@
       });
 </script>
 
+<!--pane -->
     
 <script type="text/javascript">
   $(document).ready(function(){
@@ -20,7 +23,7 @@
   });
 </script>
 
-\\\accordion\\\
+<!--1accordion h3 p -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -38,7 +41,7 @@ $(document).ready(function(){
 });
 </script>
 
-\\\largeImg\\\
+<!--h2 largeImg -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -58,7 +61,7 @@ $(document).ready(function(){
 });
 </script>
 
-\\\box\\\
+<!--box -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -79,7 +82,7 @@ $(document).ready(function(){
 });
 </script>
 
-\\\accordion h3\\\
+<!--2accordion h3 p -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -97,7 +100,7 @@ $(document).ready(function(){
 });
 </script>
 
-\\\btn1 panel btn2\\\
+<!--btn1 panel btn2 -->
 
 <script type="text/javascript">
             $(document).ready(function(){
@@ -116,7 +119,10 @@ $(document).ready(function(){
             });
         </script>
 
-\\\
+
+
+<!--BODY -->
+
 
 
 
