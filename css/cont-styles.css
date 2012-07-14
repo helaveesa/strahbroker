@@ -1,8 +1,6 @@
-<!--HEAD -->
+/*HEAD*/
+/*pane*/
 
-\\\pane\\\
-
-<style type="text/css">
 h3 {
 	margin: 0;
 	padding: 0 0 .3em;
@@ -23,11 +21,9 @@ p {
 	right: 10px;
 	cursor: pointer;
 }
-</style>
 
-\\\accordion h3-1\\\
+/*accordion h3-1*/
 
-<style type="text/css">
 .accordion2 {
 	width: 480px;
 	border-bottom: solid 1px #c4c4c4;
@@ -55,11 +51,9 @@ p {
 	border-right: solid 1px #c4c4c4;
 	display: none;
 }
-</style>
 
-\\\largeImg\\\
+/*h2 largeImg*/
 
-<style type="text/css">
 h2 {
 	font: bold 190%/100% Arial, Helvetica, sans-serif;
 	margin: 0 0 .2em;
@@ -83,11 +77,9 @@ h2 em {
 .thumbs img:hover {
 	border-color: #FF9900;
 }
-</style>
 
-\\\box\\\
+/*box*/
 
-<style type="text/css">
 a {
 	font-weight: bold;
 	color: #463224;
@@ -98,11 +90,9 @@ a {
 	width: 100px;
 	position: relative;
 }
-</style>
 
-\\\accordion h3-2\\\
+/*accordion h3-2*/
 
-<style type="text/css">
 .accordion {
 	width: 480px;
 	border-bottom: solid 1px #c4c4c4;
@@ -129,12 +119,9 @@ a {
 	border-left: solid 1px #c4c4c4;
 	border-right: solid 1px #c4c4c4;
 }
-</style>
 
+/*btn1 panel p btn2*/
 
-\\\btn1 panel btn2\\\
-
-        <style type="text/css">
 a:focus {
                 outline: none;
             }
@@ -153,9 +140,8 @@ p {
     margin: 18px;
     padding: 0 0 0.5em;
 }
-        </style>
 
-<!--&&& -->
+/*panel slide btn-slide*/
 
 a:focus {
 	outline: none;

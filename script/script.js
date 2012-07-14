@@ -1,31 +1,21 @@
-<!--HEAD -->
+/*HEAD*/
 
-<!--btn-slide -->
-
-<script type="text/javascript">
+/*btn-slide*/
       $(document).ready(function(){
       $(".btn-slide").click(function(){
       $("#panel").slideToggle("slow");
       $(this).toggleClass("active"); return false;
       });
       });
-</script>
 
-<!--pane -->
-    
-<script type="text/javascript">
+/*pane*/
   $(document).ready(function(){
-
   $(".pane .delete").click(function(){
   $(this).parents(".pane").animate({ opacity: "hide" }, "slow");
   });
-
   });
-</script>
 
-<!--1accordion h3 p -->
-
-<script type="text/javascript">
+/*1accordion h3 p*/
 $(document).ready(function(){
 
     $(".accordion2 h3").eq(2).addClass("active");
@@ -39,11 +29,8 @@ $(document).ready(function(){
     });
 
 });
-</script>
 
-<!--h2 largeImg -->
-
-<script type="text/javascript">
+/*h2 largeImg*/
 $(document).ready(function(){
 
 	$("h2").append('<em></em>')
@@ -59,13 +46,11 @@ $(document).ready(function(){
 	});
 
 });
-</script>
 
-<!--box -->
+/*box*/
 
-<script type="text/javascript">
+
 $(document).ready(function(){
-
 
 	$(".run").click(function(){
 
@@ -80,11 +65,9 @@ $(document).ready(function(){
 	});
 
 });
-</script>
 
-<!--2accordion h3 p -->
+/*2accordion h3 p*/
 
-<script type="text/javascript">
 $(document).ready(function(){
 
 	$(".accordion h3:first").addClass("active");
@@ -98,11 +81,8 @@ $(document).ready(function(){
 	});
 
 });
-</script>
 
-<!--btn1 panel btn2 -->
-
-<script type="text/javascript">
+/*btn1 panel btn2*/
             $(document).ready(function(){
 
                 $("#btn1").click(function(){
@@ -117,11 +97,7 @@ $(document).ready(function(){
                     return false;
                 });
             });
-        </script>
-
-
-
-<!--BODY -->
+ /*BODY*/
 
 
 
