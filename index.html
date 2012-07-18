@@ -1,5 +1,5 @@
 <html>
-<!--#set var="DEBUG" value="0" -->
+<!--#set var="DEBUG" value="1" -->
 
 <!--beginning -->
 <!--head -->
@@ -60,13 +60,13 @@
 
 
 
-<!--menu -->
+
     <!--# include file="./content/header.html" -->
 
 
     <!--#set var="CONTENT" value= "/content/none.html" -->
 
-    <!--#if expr="$REQUEST_URI = /^\//" -->
+    <!--#if expr="$REQUEST_URI = /^\/\$/" -->
     <!--#set var="CONTENT" value= "/content/main.html" -->
     <!--#endif -->
 
@@ -123,9 +123,10 @@
     Это отладочный вывод, отключается в $DEBUG<br />
     $REQUEST_URI: <!--# echo var="REQUEST_URI" default="нет" --><br />
     $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
-    $IMGZAIDMAN: <!--# echo var="IMGZAIDMAN: default="imgzaidman.html" --></br />
-<br />
+    $IMGZAIDMAN: <!--# echo var="IMGZAIDMAN" default="imgzaidman.html" --></br />
+    <br />
     <!--#endif -->
+    <!--menu -->
     <br>
     <br>
     <table>
