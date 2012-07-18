@@ -11,9 +11,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script type="text/javascript" src="/script/script.js"></script>
 
-    <link href="/images/favicon.ico" type="image/x-icon" rel="Shortcut Icon">
+   <!--<link href="/images/favicon.ico" type="image/x-icon"
+   rel="Shortcut Icon"> -->
 
-<!--<link href="http://faviconka.ru/ico/faviconka_ru_1444.ico" type="image/x-icon" rel="Shortcut Icon"> -->
+   <link href="http://faviconka.ru/ico/faviconka_ru_1444.ico" type="image/x-icon" rel="Shortcut Icon">
 
     <link rel="stylesheet" type="text/css" href="/css/cont-styles.css"/>
 
@@ -39,7 +40,8 @@
 <div id="panel">
   <h2 class="panel">
     <a href="#" class="panel">
-      text on the green fon
+    text on the green fon
+<br>
   </h2>
 </div>
 
@@ -55,6 +57,9 @@
     <!--#echo var="DATE_GMT"-->
     </a></p>
     <br>
+
+
+
 <!--menu -->
     <!--# include file="./content/header.html" -->
 
@@ -79,18 +84,25 @@
     <!--#set var="CONTENT" value= "/content/service.html" -->
     <!--#endif -->
 
+    <!--#if expr="$REQUEST_URI = /^\/apparat.html/" -->
+    <!--#set var="CONTENT" value= "/content/apparat.html" -->
+    <!--#endif -->
+
     <!--#if expr="$REQUEST_URI = /^\/contacts.html/" -->
     <!--#set var="CONTENT" value= "/content/contacts.html" -->
     <!--#endif -->
 
+    <!--#if expr="$REQUEST_URI = /^\/article.html/" -->
+    <!--#set var="CONTENT" value= "/content/article.html" -->
+    <!--#endif -->
 
 
     <!--#if expr="$DEBUG = /1/" -->
     Это отладочный вывод, отключается в $DEBUG<br />
     $REQUEST_URI: <!--# echo var="REQUEST_URI" default="нет" --><br />
     $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
-    $ARTICLE: <!--# echo var="ARTICLE" default="article.html" --></br />
-    <br />
+    $IMGZAIDMAN: <!--# echo var="IMGZAIDMAN: default="imgzaidman.html" --></br />
+<br />
     <!--#endif -->
     <br>
     <br>
@@ -101,67 +113,20 @@
         </td>
 
         <td valign="top">
-          <!--# include file="./content/article.html" -->
+          <!--# include file="$CONTENT" -->
+        </td>
+
+        <td valign="top">
+          <!--# include file="./content/imgzaidman.html" -->
           <div class="panel">
           </div>
           <br>
         </td>
-
-        <td valign="top">
-          <!--# include file="$CONTENT" -->
-        </td>
-      </tr>
+</tr>
     </table>
     <!--# include file="./content/footer.html" -->
 </a></p>
 </div>
-
-
-
-<!--понятийный аппарат таблица pane-->
-<div class="pane">
-  <h3>Понятийный аппарат:</h3>
-  <p style="background-color:fffddf";>
-    <span style="color: green">★</span>
-    Страхова́ние</p> — особый вид экономических отношений, призванный
-  обеспечить страховую защиту людей и их дел от различного рода
-  опасностей.
-  <img src="images/btn-delete.gif" alt="delete" class="delete" />
-</div>
-<div class="pane">
-  <p style="background-color:fffddf";>
-    <span style="color: green">★</span>
-    Страховой случай</p> — (англ. insured loss) событие, предусмотренное
-  договором страхования или законом, с наступлением которого возникает
-  обязанность страховщика произвести страховую выплату страхователю,
-  застрахованному лицу, выгодоприобретателю или иным третьим лицам.
-  <img src="images/btn-delete.gif" alt="delete" class="delete" />
-</div>
-<div class="pane">
-  <p style="background-color:fffddf";>
-    <span style="color: green">★</span>
-    Принцип эквивалентности</p>выражает требование равновесия между доходами
-  страховой организации и ее расходами.<br>
-  Риск угрожает многим лицам, но
-  лишь немногие из них действительно затрагиваются страховыми
-  случаями.<br>
-  Выплаты по страховым случаям покрываются за счет взносов
-  многих страхователей, избежавших данного риска.
-  <img src="images/btn-delete.gif" alt="delete" class="delete" />
-</div>
-<div class="pane">
-  <p style="background-color:fffddf";>
-    <span style="color: green">★</span>
-    Понятие «случайность»</p>означает, что хотя с возможностью наступления
-  данного события приходится считаться исходя из жизненного опыта,
-  однако в каждом отдельном случае неизвестно, будет ли вообще иметь
-  место данное событие или в какой момент времени оно
-  наступит. Преднамеренно осуществленные действия не страхуются, так как
-  в них отсутствует принцип случайности.
-  <img src="images/btn-delete.gif" alt="delete" class="delete" />
-</div>
-<br>
-<br>
 
 
 <!--гармошка-->
@@ -247,7 +212,7 @@
 <br>
 <br>
 
-<!--img-->
+<!--img
 <br>
 <h4>Зайдман Яков Израилевич</h4>
 
@@ -259,7 +224,7 @@
   <a href="images/img4-lg.jpg" title="Image 4"><img src="images/img4-thumb.jpg" /></a>
   <a href="images/img5-lg.jpg" title="Image 5"><img src="images/img5-thumb.jpg" /></a>
 </p>
-<br>
+<br> -->
 
 <!--ссылки-->
 <div class="divider"><hr /></div>
