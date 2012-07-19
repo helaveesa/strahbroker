@@ -131,11 +131,15 @@
     <br>
     <table>
       <tr>
-        <td valign="top">
+        <!-- фиксированная ширина столбцов, атрибут width -->
+        <td valign="top" width="300">
           <!--# include file="./content/menu.html" -->
         </td>
 
-        <td valign="top">
+        <!-- поребрик слева от центрального столбца, чтобы визуально
+        отделить его от меню -->
+        <td valign="top" width="650"
+            style="border-left: 1px dotted #000000; padding-left: 10px;">
           <!--# include file="$CONTENT" -->
         </td>
 
@@ -151,7 +155,7 @@
 </a></p>
 </div>
 
-<!--ссылки -->
+<!-- Эти ссылки лучше на отдельную страницу вынести -->
 <div class="divider"><hr />
 </div>
 <p style="font-size:20px; font-family:courier">Выбор страховой компании
