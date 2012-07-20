@@ -115,6 +115,10 @@
     <!--#set var="CONTENT" value= "/content/article.html" -->
     <!--#endif -->
 
+    <!--#if expr="$REQUEST_URI = /^\/discussion.html/" -->
+    <!--#set var="CONTENT" value= "/content/discussion.html" -->
+    <!--#endif -->
+
 
     <!--#if expr="$DEBUG = /1/" -->
     Это отладочный вывод, отключается в $DEBUG<br />
