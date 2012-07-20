@@ -173,5 +173,17 @@ a:focus {
 	background-position: right 12px;
 }
 
+/*lentochka*/
+
+#awwward_site {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 91;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
