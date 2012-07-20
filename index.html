@@ -31,18 +31,16 @@
 
 <body id="top">
   <div id="center">
-    <h1 style="background-color:ffa500";>Мы находимся здесь, чтобы внести
-      свой вклад в этот мир. А иначе зачем мы здесь?&mdash;Стив
-      Джобс </h1>
+   <h1 style="background-color:ffa500";>Мы находимся здесь, чтобы внести
+      свой вклад в этот мир. А иначе зачем мы здесь?&mdash;Стив Джобс</h1>
     <br>
 
 <!--panel green fon -->
 <div id="panel">
   <h2 class="panel">
     <a href="#" class="panel">
------------------------------------------------
-<br>
-  </h2>
+     <p>---</p>
+ </h2>
 </div>
 
 <!--orange slide PUSH -->
@@ -50,11 +48,6 @@
       <a href="#" class="btn-slide">Нажми!
         <br>
         <br>
-<!--day and data -->
-    <!--#config timefmt="%A"-->
-    <!--#echo var="DATE_GMT"--><br>
-    <!--#config timefmt="%d.%m.%Y"-->
-    <!--#echo var="DATE_GMT"-->
     </a></p>
     <br>
 
@@ -114,6 +107,10 @@
     <!--#set var="CONTENT" value= "/content/contacts.html" -->
     <!--#endif -->
 
+    <!--#if expr="$REQUEST_URI = /^\/useful_links.html/" -->
+    <!--#set var="CONTENT" value= "/content/useful_links.html" -->
+    <!--#endif -->
+
     <!--#if expr="$REQUEST_URI = /^\/article.html/" -->
     <!--#set var="CONTENT" value= "/content/article.html" -->
     <!--#endif -->
@@ -153,30 +150,6 @@
     </table>
     <!--# include file="./content/footer.html" -->
 </a></p>
-</div>
-
-<!-- Эти ссылки лучше на отдельную страницу вынести -->
-<div class="divider"><hr />
-</div>
-<p style="font-size:20px; font-family:courier">Выбор страховой компании
-<a target="_blank" href="http://www.ic-ratings.ru/reviews/">
-    предложения страховых компаний</a></p>
-<p style="font-size:20px; font-family:courier">Портал
-<a target="_blank" href="http://www.sluchay.ru/">
-    о страховании</a></p>
-<p style="font-size:20px; font-family:courier">Расчет КАСКО ОСАГО
-<a target="_blank" href="http://www.msk-polis.ru/auto-rosgosstrah.html/">
-    Росгосстрах</a></p>
-<p style="font-size:20px; font-family:courier">Клиника
-<a target="_blank" href="http://avaclinic.ru/">"Скандинавия"</a> "Мы рядом, чтобы Вы были здоровы!"</p>
-<p style="font-size:20px; font-family:courier">Рейтинг страховых компаний
-<a target="_blank" href="http://www.provolochki.ru/opinions/company_118/page/1">первая помощь при выборе страховой компании</a></p>
-<p style="font-size:20px; font-family:courier">Мотоциклы
-<a target="_blank" href="http://www.multimoto.ru/">из Японии</a><p>
-<p style="font-size:20px; font-family:courier">Система лояльности для
-  мотоциклистов
-<a target="_blank" href="http://www.bikerswelcome.ru/">Bikers Welcome</a></p>
-<div class="clear"><hr />
 </div>
 
 <div id="footer">
