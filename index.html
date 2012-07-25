@@ -1,0 +1,180 @@
+<html>
+<!--#set var="DEBUG" value="0" -->
+
+<!--beginning -->
+<!--head -->
+<head>
+
+    <title>ZAIdmanBROKER.ru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/script/script.js"></script>
+
+   <link href="/images/favicon_men.ico" type="image/x-icon"
+   rel="Shortcut Icon">
+
+  <!-- <link href="http://faviconka.ru/ico/faviconka_ru_1444.ico" type="image/x-icon" rel="Shortcut Icon">-->
+
+    <link rel="stylesheet" type="text/css" href="/css/cont-styles.css"/>
+
+
+<!--head end -->
+
+</head>
+
+
+<!--beginning -->
+<!--body -->
+<body>
+
+<body style="background-color:#cadaba;">
+
+
+<body id="top">
+  <div id="center">
+   <h1 style="background-color:ffa500";>Мы находимся здесь, чтобы внести
+      свой вклад в этот мир. А иначе зачем мы здесь?&mdash;Стив Джобс</h1>
+    <br>
+
+<!--panel green fon -->
+<div id="panel">
+  <h2 class="panel">
+    <a href="#" class="panel">
+     <p>---</p>
+ </h2>
+</div>
+
+<!--orange slide PUSH -->
+    <p class="slide">
+      <a href="#" class="btn-slide">Нажми!
+        <br>
+        <br>
+    </a></p>
+    <br>
+
+
+
+
+    <!--# include file="./content/header.html" -->
+
+
+    <!--#set var="CONTENT" value= "/content/none.html" -->
+
+    <!--#if expr="$REQUEST_URI = /^\/\$/" -->
+    <!--#set var="CONTENT" value= "/content/main.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/index.html/" -->
+    <!--#set var="CONTENT" value= "/content/main.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/whozaidman.html/" -->
+    <!--#set var="CONTENT" value= "/content/whozaidman.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/strbr_for_you.html/" -->
+    <!--#set var="CONTENT" value= "/content/strbr_for_you.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/strahkons.html/" -->
+    <!--#set var="CONTENT" value= "/content/strahkons.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/regulations.html/" -->
+    <!--#set var="CONTENT" value= "/content/regulations.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/service.html/" -->
+    <!--#set var="CONTENT" value= "/content/service.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/osago.html/" -->
+    <!--#set var="CONTENT" value= "/content/osago.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/kasko.html/" -->
+    <!--#set var="CONTENT" value= "/content/kasko.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/apparat.html/" -->
+    <!--#set var="CONTENT" value= "/content/apparat.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/garmoshka.html/" -->
+    <!--#set var="CONTENT" value= "/content/garmoshka.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/contacts.html/" -->
+    <!--#set var="CONTENT" value= "/content/contacts.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/useful_links.html/" -->
+    <!--#set var="CONTENT" value= "/content/useful_links.html" -->
+    <!--#endif -->
+
+    <!--#if expr="$REQUEST_URI = /^\/article.html/" -->
+    <!--#set var="CONTENT" value= "/content/article.html" -->
+    <!--#endif -->
+
+
+    <!--#if expr="$DEBUG = /1/" -->
+    Это отладочный вывод, отключается в $DEBUG<br />
+    $REQUEST_URI: <!--# echo var="REQUEST_URI" default="нет" --><br />
+    $CONTENT: <!--# echo var="CONTENT" default="none.html" --></br />
+    $IMGZAIDMAN: <!--# echo var="IMGZAIDMAN" default="imgzaidman.html" --></br />
+    <br />
+    <!--#endif -->
+    <!--menu -->
+    <br>
+    <br>
+    <table>
+      <tr>
+        <!-- фиксированная ширина столбцов, атрибут width -->
+        <td valign="top" width="300">
+          <!--# include file="./content/menu.html" -->
+        </td>
+
+        <!-- поребрик слева от центрального столбца, чтобы визуально
+        отделить его от меню -->
+        <td valign="top" width="650"
+            style="border-left: 1px dotted #000000; padding-left: 10px;">
+          <!--# include file="$CONTENT" -->
+        </td>
+
+        <td valign="top">
+          <!--# include file="./content/imgzaidman.html" -->
+          <div class="panel">
+          </div>
+          <br>
+        </td>
+</tr>
+    </table>
+    <!--# include file="./content/footer.html" -->
+</a></p>
+</div>
+
+<div id="footer">
+
+<!--реквизиты-->
+<p>
+<a href="#" class="run" class="btn" id="btn1" title="Попробуй, нажми">Яков Зайдман</a>
+<div id="box">
+    <p>broker50<br>
+      @mail.ru<br>
+      <br>
+      Пишите!</p>
+  </div>
+</p>
+
+<!--реквизиты админ-ов сайта-->
+Admin:
+<br>
+<a href="mailto:i.am.rigidus@gmail.com">Отправить e-mail Rigidus</a>
+<br>
+<br>
+<a href="mailto:helaveesa.nolder@gmail.com">Отправить e-mail Helaveesa</a>
+
+<!--body end-->
+  </body>
+</html>
