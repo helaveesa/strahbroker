@@ -2,12 +2,20 @@
 
 (defun menu ()
   '((:link "/" :title "Главная")
-    (:link "/aaa" :title "aaa")
-        (:link "/aaa_aaa" :title "a-aaa")
-        (:link "/aaa_aaa" :title "a-aaa")
-
-
-
+    (:link "/about" :title "Страхование")
+        (:link "/clients" :title "Клиенты")
+        (:link "/biografy" :title "Биография-страхового-брокера")
+        (:link "/whoyz" :title "Яков Зайдман")
+        (:link "/strahbr" :title "Кто-такой-страховой-брокер")
+        (:link "/strahkons" :title "Кто-такой-страховой-консультант")
+        (:link "/work" :title "Проекты")
+    (:link "/article" :title "Статьи")
+    (:link "/service" :title "Услуги")
+        (:link "/kasko" :title "КАСКО")
+        (:link "/osago" :title "ОСАГО")
+        (:link "/regulations" :title "Правила-страхования")
+    (:link "/apparat" :title "Аппарат")
+    (:link "/contacts" :title "Контакты")))
 
 ;; start
 (restas:start '#:strahbroker :port )
