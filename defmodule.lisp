@@ -19,7 +19,7 @@
                             :standard-generic-function
                             :class-name))
 
-(in-package #:stranbroker)
+(in-package #:strahbroker)
 
 (let ((path '(:RELATIVE "strahbroker")))
     (setf asdf:*central-registry*

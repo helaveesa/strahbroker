@@ -15,8 +15,8 @@
 
 (defun old-page (filename)
     (tpl:root
-        (list :content
-              (list :content (alexandria:read-file-into-string filename))))))
+        ;;(list :content
+              (list :content (alexandria:read-file-into-string filename))))
 
 
 ;; main
@@ -97,6 +97,10 @@
 (restas:mount-submodule -resources- (#:restas.directory-publisher)
   (restas.directory-publisher:*baseurl* '("resources"))
   (restas.directory-publisher:*directory* (path "resources/")))
+
+(restas:mount-submodule -gif- (#:restas.directory-publisher)
+    (restas.directory-publisher:*baseurl* '("gif"))
+      (restas.directory-publisher:*directory* (path "gif/")))
 
 
 
