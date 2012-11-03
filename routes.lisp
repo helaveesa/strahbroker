@@ -15,21 +15,21 @@
 
 (defun old-page (filename)
     (tpl:root
-        (list :content (tpl:contentblock
-                           (list :content (alexandria:read-file-into-string filename))))))
+        (list :content
+              (list :content (alexandria:read-file-into-string filename))))))
 
 
 ;; main
 
 (restas:define-route main ("/")
     (tpl:root
-        (list :content (concatenate 'string
-                                     (tpl:platform)
-                                     (tpl:ecosystem)
-                                     (tpl:amc)
-                                     (tpl:solutions)
-                                     (tpl:thrive)
-                                     (tpl:app))))))
+        (list :content (concatenate 'string))))
+                                     ;;(tpl:platform)
+                                     ;;(tpl:ecosystem)
+                                     ;;(tpl:amc)
+                                     ;;(tpl:solutions)
+                                     ;;(tpl:thrive)
+                                     ;;(tpl:app))))))
 
 
 ;; plan file pages
@@ -46,8 +46,35 @@
 (def/route about ("about")
     (old-page "content/about.htm"))
 
-(def/route about2 ("about_company")
-    (old-page "content/about_company.htm"))
+(def/route about2 ("clients")
+    (old-page "content/clients.htm"))
+
+(def/route about3 ("biografy")
+  (old-page "content/biografy.htm"))
+
+(def/route about4 ("work")
+  (old-page "content/work.htm"))
+
+(def/route article ("article")
+  (old-page "content/article.htm"))
+
+(def/route service ("service")
+  (old-page "content/service.htm"))
+
+(def/route service2 ("kasko")
+  (old-page "content/kasko.htm"))
+
+(def/route service3 ("osago")
+  (old-page "content/osago.htm"))
+
+(def/route service4 ("regulations")
+  (old-page "content/regulations.htm"))
+
+(def/route apparat ("apparat")
+  (old-page "content/apparat.htm"))
+
+(def/route contacts ("contacts")
+  (old-page "content/contacts.htm"))
 
 
 ;; submodules
