@@ -46,15 +46,6 @@
 (def/route about ("about")
     (old-page "content/about.htm"))
 
-(def/route about2 ("clients")
-    (old-page "content/clients.htm"))
-
-(def/route about3 ("biografy")
-  (old-page "content/biografy.htm"))
-
-(def/route about4 ("work")
-  (old-page "content/work.htm"))
-
 (def/route article ("article")
   (old-page "content/article.htm"))
 
@@ -75,6 +66,18 @@
 
 (def/route contacts ("contacts")
   (old-page "content/contacts.htm"))
+
+(def/route sitemap ("sitemap")
+  (old-page "content/sitemap.htm"))
+
+(def/route fotogalery ("fotogalery")
+  (old-page "content/fotogalery.htm"))
+
+(def/route news ("news")
+  (old-page "content/news.htm"))
+
+(def/route strahkomp ("strahkomp")
+  (old-page "content/strahkomp.htm"))
 
 
 ;; submodules

@@ -3,9 +3,6 @@
 (defun menu ()
   '((:link "/" :title "Главная")
     (:link "/about" :title "Страхование")
-        (:link "/clients" :title "Клиенты")
-        (:link "/biografy" :title "Биография-страхового-брокера")
-        (:link "/whoyz" :title "Яков Зайдман")
         (:link "/strahbr" :title "Кто-такой-страховой-брокер")
         (:link "/strahkons" :title "Кто-такой-страховой-консультант")
         (:link "/work" :title "Проекты")
@@ -15,6 +12,10 @@
         (:link "/osago" :title "ОСАГО")
         (:link "/regulations" :title "Правила-страхования")
     (:link "/apparat" :title "Аппарат")
+    (:link "/strahkomp" :title "Страховые-компании")
+    (:link "/fotogalery" :title "Фотогалерея")
+    (:link "/news" :title "Новости")
+    (:link "/sitemap" :title "Карта-сайта")
     (:link "/contacts" :title "Контакты")))
 
 ;; start
