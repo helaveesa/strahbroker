@@ -19,7 +19,7 @@
     (:link "/contacts" :title "Контакты")))
 
 ;; start
-(restas:start '#:strahbroker :port 768)
+(restas:start '#:strahbroker :port 110)
 (restas:debug-mode-on)
 ;; (restas:debug-mode-off)
 (setf hunchentoot:*catch-errors-p* t)
