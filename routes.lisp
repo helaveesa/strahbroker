@@ -46,22 +46,19 @@
 (def/route about ("about")
     (old-page "content/about.htm"))
 
-(def/route article ("article")
-  (old-page "content/article.htm"))
-
-(def/route service ("service")
-  (old-page "content/service.htm"))
+(def/route articles ("articles")
+  (old-page "content/articles.htm"))
 
 (def/route contacts ("contacts")
   (old-page "content/contacts.htm"))
 
-(def/route service2 ("kasko")
+(def/route kasko ("kasko")
   (old-page "content/kasko.htm"))
 
-(def/route service3 ("osago")
+(def/route osago ("osago")
   (old-page "content/osago.htm"))
 
-(def/route service4 ("regulations")
+(def/route regulations ("regulations")
   (old-page "content/regulations.htm"))
 
 (def/route sitemap ("sitemap")
