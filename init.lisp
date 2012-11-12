@@ -2,9 +2,9 @@
 
 (defun menu ()
   '((:link "/" :title "Главная")
-    (:link "/about" :title "Страхование")
-    (:link "/article" :title "Статьи")
-    (:link "/service" :title "Услуги")
+    (:link "/about" :title "О-страховании")
+    (:link "/articles" :title "Статьи")
+    (:link "/ulinks" :title "Полезные-ссылки")
     (:link "/contacts" :title "Контакты")))
 
 ;; start
