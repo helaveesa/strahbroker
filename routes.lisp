@@ -52,6 +52,9 @@
 (def/route service ("service")
   (old-page "content/service.htm"))
 
+(def/route contacts ("contacts")
+  (old-page "content/contacts.htm"))
+
 (def/route service2 ("kasko")
   (old-page "content/kasko.htm"))
 
@@ -61,23 +64,15 @@
 (def/route service4 ("regulations")
   (old-page "content/regulations.htm"))
 
-(def/route apparat ("apparat")
-  (old-page "content/apparat.htm"))
-
-(def/route contacts ("contacts")
-  (old-page "content/contacts.htm"))
-
 (def/route sitemap ("sitemap")
   (old-page "content/sitemap.htm"))
 
-(def/route fotogalery ("fotogalery")
-  (old-page "content/fotogalery.htm"))
-
-(def/route news ("news")
-  (old-page "content/news.htm"))
-
 (def/route strahkomp ("strahkomp")
   (old-page "content/strahkomp.htm"))
+
+(def/route ulinks ("ulinks")
+  (old-page "content/ulinks.htm"))
+
 
 
 ;; submodules
