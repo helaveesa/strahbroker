@@ -2,7 +2,7 @@
 
 (defun menu ()
   '((:link "/" :title "Главная")
-    (:link "/about" :title "О-страховании")
+    (:link "/about" :title "Страховой-консультант")
     (:link "/articles" :title "Статьи")
     (:link "/ulinks" :title "Полезные-ссылки")
     (:link "/contacts" :title "Контакты")))

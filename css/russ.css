@@ -150,8 +150,8 @@ address {font-style: normal}
 	.content h1 {font-size:210%;}
     .content a {color:#b51008 !important;}
     .stone { padding:0 0 0 50px; font-style:italic; font-weight:bold;}
-    	.stone .picture { width:209px; height:147px; background:url(/img/hands.jpg); margin-bottom:10px;
-        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/hands.jpg'); *background:none;}
+    	.stone .picture { width:209px; height:147px; background:url(/img/.png); margin-bottom:10px;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/.png'); *background:none;}
 
 .news-block {padding:0px 60px 45px 60px; font-size:80%; margin-top:-10px;}
 	.news-block h1 {font-size:210%;}
