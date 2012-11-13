@@ -5,6 +5,7 @@
     (:link "/about/" :title "Страховой-консультант")
     (:link "/articles/" :title "Статьи")
     (:link "/ulinks/" :title "Полезные-ссылки")
+    (:link "/imagescar/" :title "Водителям")
     (:link "/contacts/" :title "Контакты")))
 
 ;; start

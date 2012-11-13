@@ -52,6 +52,9 @@
 (def/route contacts ("contacts")
   (old-page "content/contacts.htm"))
 
+(def/route imagescar ("imagescar")
+  (old-page "content/imagescar.htm"))
+
 (def/route kasko ("kasko")
   (old-page "content/kasko.htm"))
 
