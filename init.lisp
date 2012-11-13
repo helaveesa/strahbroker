@@ -3,6 +3,7 @@
 (defun menu ()
   '((:link "/" :title "Главная")
     (:link "/about/" :title "Страховой-консультант")
+    (:link "/yz/" :title "Яков-Зайдман")
     (:link "/articles/" :title "Статьи")
     (:link "/ulinks/" :title "Полезные-ссылки")
     (:link "/contacts/" :title "Контакты")

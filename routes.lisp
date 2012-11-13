@@ -70,8 +70,8 @@
 (def/route strahkomp ("strahkomp")
   (old-page "content/strahkomp.htm"))
 
-(def/route whoyz ("whoyz")
-  (old-page "content/whoyz.htm"))
+(def/route yz ("yz")
+  (old-page "content/yz.htm"))
 
 (def/route sitemap ("sitemap")
   (old-page "content/sitemap.htm"))
