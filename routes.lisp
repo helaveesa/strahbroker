@@ -49,11 +49,14 @@
 (def/route articles ("articles")
   (old-page "content/articles.htm"))
 
+(def/route ulinks ("ulinks")
+  (old-page "content/ulinks.htm"))
+
 (def/route contacts ("contacts")
   (old-page "content/contacts.htm"))
 
-(def/route imagescar ("imagescar")
-  (old-page "content/imagescar.htm"))
+(def/route imgcar ("imgcar")
+  (old-page "content/imgcar.htm"))
 
 (def/route kasko ("kasko")
   (old-page "content/kasko.htm"))
@@ -64,14 +67,14 @@
 (def/route regulations ("regulations")
   (old-page "content/regulations.htm"))
 
-(def/route sitemap ("sitemap")
-  (old-page "content/sitemap.htm"))
-
 (def/route strahkomp ("strahkomp")
   (old-page "content/strahkomp.htm"))
 
-(def/route ulinks ("ulinks")
-  (old-page "content/ulinks.htm"))
+(def/route whoyz ("whoyz")
+  (old-page "content/whoyz.htm"))
+
+(def/route sitemap ("sitemap")
+  (old-page "content/sitemap.htm"))
 
 
 

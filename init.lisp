@@ -5,8 +5,8 @@
     (:link "/about/" :title "Страховой-консультант")
     (:link "/articles/" :title "Статьи")
     (:link "/ulinks/" :title "Полезные-ссылки")
-    (:link "/imagescar/" :title "Водителям")
-    (:link "/contacts/" :title "Контакты")))
+    (:link "/contacts/" :title "Контакты")
+    (:link "/imgcar/" :title "Водителям")))
 
 ;; start
 (restas:start '#:strahbroker :port 2001)
