@@ -1,0 +1,139 @@
+// -*- mode: closure-template-html; fill-column: 110 -*-
+
+{namespace tpl}
+
+{template root}
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">{\n}
+  <html debug="true">{\n}
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+      <!-- <meta charset="utf-8" /> -->
+      <title>Страховой брокер Яков Зайдман | Страхование</title>
+      <meta name="Keywords" content="консультант, страхование, страховой брокер, брокер спб, страховой консультант, зайдман, яков зайдман">
+      <meta name="Description" content="Страховой брокер Яков Зайдман - все виды страхования.">
+      <link href="/css/russ.css" rel="stylesheet" type="text/css">
+      <link rel="Shortcut Icon" type="image/x-icon" href="/img/favicon.ico" />
+      <script type="text/javascript" src="/i/js/swfobject.js"></script>
+      <!--<meta name='yandex-verification' content='68e4d1023da099e7' /> -->
+    </head>
+
+    <body>
+      <table id="page-box">
+        <tr>
+          <td valign="top">
+            <div id="header-box">
+              <div id="header">
+
+                <div class="logo">
+                  <div class="link"></div>
+                </div>
+
+                {call slogan /}
+
+                {call phone /}
+
+                {call nav-menu /}
+
+              </div>
+            </div>
+
+            <div id="page-bg">
+              <div id="page-content">
+                <div id="content-top">
+                  <table class="flash-box">
+                    <tr>
+
+                      {call main-menu /}
+
+                      {call decor-top1-middle /}
+
+                      <td>
+                        <div class="decor-top1-right"></div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="decor-middle-right-ext"></div>
+                <div id="content-bottom">
+                  <table class="content-box">
+                    <tr>
+                      <td>
+                        <div class="decor-top2-left"></div>
+                      </td>
+                      <td width="100%" valign="top">
+                        <table class="decor-top2-middle">
+                          <tr>
+                            <td>
+                              <div class="left"></div>
+                            </td>
+
+                            {call submenu /}
+
+                          </tr>
+                        </table>
+                      </td>
+                      <td>
+                        <div class="decor-top2-right"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" style="background:#b51008">
+                        <div class="decor-middle-left"></div>
+                      </td>
+                      <td valign="top"class="main-content-block">
+                        <div class="contenet-decor">
+                          <div class="decor-left"></div>
+                          <div class="decor-right"></div>
+                        </div>
+
+                        <!--{call content /} -->
+
+                        {$content |noAutoescape}
+
+                        {call news-block /}
+
+                      </td>
+                      <td valign="top" style="background:#b51008">
+                        <div class="decor-middle-right"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="decor-bottom-left1"></div>
+                      </td>
+                       <td>
+                        <table class="decor-bottom">
+                          <tr>
+                            <td>
+                              <div class="decor-bottom-left2"></div>
+                            </td>
+                            <td width="100%" class="bottom">
+                              <div class="decor-bottom-center"></div>
+                            </td>
+                            <td>
+                              <div class="decor-bottom-right-1"></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td>
+                        <div class="decor-bottom-right-2"></div>
+                      </td>
+                    </tr>
+
+                    {call footer /}
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+</body>{\n}
+</html>{\n}
+{/template}
+
