@@ -38,3 +38,12 @@
 
 
 (closure-template:compile-template :common-lisp-backend (path "templates.htm"))
+(closure-template:compile-template :common-lisp-backend (path "slogan.htm"))
+(closure-template:compile-template :common-lisp-backend (path "phone.htm"))
+(closure-template:compile-template :common-lisp-backend (path "nav-menu.htm"))
+(closure-template:compile-template :common-lisp-backend (path "main-menu.htm"))
+(closure-template:compile-template :common-lisp-backend (path "decor-top1-middle.htm"))
+(closure-template:compile-template :common-lisp-backend (path "submenu.htm"))
+(closure-template:compile-template :common-lisp-backend (path "content.htm"))
+(closure-template:compile-template :common-lisp-backend (path "news-block.htm"))
+(closure-template:compile-template :common-lisp-backend (path "footer.htm"))

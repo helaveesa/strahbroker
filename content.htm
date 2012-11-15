@@ -1,0 +1,32 @@
+// -*- mode: closure-template-html; fill-column: 110 -*-
+
+{namespace tpl}
+
+                      {template content}
+                        <div class="content">
+                          <table>
+                            <tr>
+                              <td valign="top">
+
+
+                                {$content |noAutoescape}
+
+
+                                <div class="gallery-box"></div>
+                              </td>
+                              <td valign="top">
+                                <div class="stone">
+                                  <div class=picture></div>
+                                  <img src="/img/car_3_decor.jpg" width="220" height="138">
+                                  <br/>
+                                  <br/>
+                                  <img src="/img/car_4_decor.jpg" width="220" height="138">
+                                  <br/>
+                                  <br/>
+                                  <img src="/img/car_14_decor.jpg" width="220" height="138">
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      {/template}
