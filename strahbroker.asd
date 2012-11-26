@@ -4,7 +4,7 @@
       :version      "0.0.2"
       :author       "helaveesa <helaveesa.nolder@gmail.com>"
       :licence      "GPLv3"
-      :description  "site http://rigidus.ru"
+      :description  "site http://ZaidmanBroker.ru"
       :depends-on   (#:closer-mop
                      #:cl-ppcre
                      #:restas-directory-publisher
